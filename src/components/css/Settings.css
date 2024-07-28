@@ -1,0 +1,70 @@
+.settings-container {
+    padding: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-list-container {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  color: var(--sidebar-bg);
+}
+
+.section input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.section button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #607D8B;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.section button:hover {
+  background-color: #455A64;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  color: var(--sidebar-bg);
+}
+
+.section ul li button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d9534f;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.section ul li button:hover {
+  background-color: #c9302c;
+}
+
+.settings-tab-btns {
+  margin-bottom: 30px;
+}

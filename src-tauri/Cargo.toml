@@ -1,0 +1,25 @@
+[package]
+name = "invoice-manager"
+version = "0.0.0"
+description = "A Tauri App"
+authors = ["you"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "1", features = [] }
+
+[dependencies]
+tauri = { version = "1", features = [ "dialog-all", "shell-open"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = "0.26.3"
+libsqlite3-sys = { version = "0.23.0", features = ["bundled"] }
+log = "0.4"
+env_logger = "0.9"
+chrono = "0.4"
+
+[features]
+# This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  --bg: #ECEFF1;
+  --sidebar-bg: #37474F;
+  --text: #FFFFFF;
+  --links: #607D8B ;
+  --links-hover: #455A64 ;
+  --btns: #78909C;
+  --text-btns: #2E3440;
+  --active-bg: #ECEFF1;
+  --main-content-text: #37474F;
+
+  background-color: var(--bg);
+  color: var(--text);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: var(--sidebar-bg);
+  padding: 20px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s;
+}
+
+.sidebar.open {
+  width: 200px;
+}
+
+.sidebar.closed {
+  width: 0;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.sidebar h2 {
+  color: var(--text);
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+  color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  display: flex;  
+  align-items: center;  
+  border-radius: 5px;
+  transition: background-color 0.3s, width 0.3s;
+  width: calc(100% + 20px);
+}
+
+.sidebar nav ul li a .svg-inline--fa {
+  margin-right: 10px; 
+}
+
+.sidebar nav ul li a:hover {
+  background-color: var(--links-hover);
+}
+
+.sidebar nav ul li a.active {
+  background-color: var(--active-bg);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: #37474F;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 200px;
+  background-color: var(--bg);
+  transition: margin-left 0.3s ease;
+}
+
+.container.sidebar-closed .main-content {
+  margin-left: 0;
+}
+
+.toggle-arrow {
+  position: fixed; 
+  top: 20px;
+  left: 200px;
+  cursor: pointer;
+  z-index: 500;
+  transition: left 0.3s;
+  background-color: var(--sidebar-bg);
+  color: var(--main-content-text);
+  color: white;
+  padding: 7px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.container.sidebar-closed .toggle-arrow {
+  left: 0; 
+}

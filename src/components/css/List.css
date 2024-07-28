@@ -1,0 +1,100 @@
+/* List.css */
+.list-container {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-container h1 {
+  text-align: center;
+  color: var(--main-content-text);
+}
+
+.tab-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--links);
+  color: white;
+}
+
+.tab-btn.active {
+  background-color: var(--sidebar-bg);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: var(--sidebar-bg);
+  color: var(--text);
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 13px;
+}
+
+th {
+  cursor: pointer;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(173, 181, 183);
+  color: var(--sidebar-bg);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--bg);
+  color: var(--sidebar-bg);
+}
+
+
+.actions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.actions .pay {
+  background-color: #06e115;
+  color: #fff;
+}
+
+.actions .edit {
+  background-color: #d6e106;
+  color: #fff;
+}
+
+.actions .delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.actions .pay:hover {
+  background-color: #0abe3d;
+}
+
+.actions .edit:hover {
+  background-color: #bebe0a;
+}
+
+.actions .delete:hover {
+  background-color: #c82333;
+}
