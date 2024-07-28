@@ -2,6 +2,8 @@
 
 Admin Manager is a comprehensive administrative management tool designed to streamline the process of managing invoices, revenues, tasks, and more. This project uses Tauri and React for building the application.
 
+https://github.com/user-attachments/assets/fb17a5ce-2eb0-4133-9393-196d02494970
+
 ## Features
 
 - **Invoice Management**: Create, update, delete, and track invoices.
